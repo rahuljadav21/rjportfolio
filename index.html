@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rahul Jadav</title>
+    <script>
+       let t = true;
+        let toggle = () =>{
+
+        let comp = document.querySelector('.navlist')
+           comp.classList.toggle('togle');
+           let burg = document.getElementById('burg');
+           
+           let cross = document.getElementById('cross');
+           
+            if(t){
+                burg.style.display='none';
+                cross.style.display='block';
+            }else{
+                burg.style.display='block';
+                cross.style.display='none';
+            }
+           t = !t;
+    }
+    
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                <img src="/resources/rj_logo.svg" alt="rahuljadavlogo">
+            </a>
+            </div>
+
+            <ul class="navlist togle">
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#skill">Skillset</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+            <div id="burg" class="burger" style="margin: 7px;" onclick="toggle()">
+                <div  class="line"></div>
+                <div  class="line"></div>
+                <div  class="line"></div>
+            </div>
+            <div id="cross" class="cross" onclick="toggle()" style="margin: 7px;">
+                <div id="l1" class="line"></div>
+                <div id="l2" class="line"></div>
+                <div id="l3" class="line"></div>
+            </div>
+
+
+        </div>
+    </nav>
+    <main>
+
+
+        <div id="home" class="home">
+            <div class="dev">
+                <img class="dev-img" src="/resources/undraw_Developer_activity_re_39tg 1devIcon.svg" alt="">
+            </div>
+            <div class="intro">
+
+                <p>Hi, there 👋 </p>
+                <p> I'm Rahul Jadav.</p>
+                <p> I am a Full Stack </p>
+                <p> Web Developer </p>
+                <p> and Programmer. </p>
+
+            </div>
+        </div>
+
+        <div id="about" class="about">
+            <div class="title">
+                About my Self
+            </div>
+            <div class="abt-container">
+                <div class="abt-text">
+                    <ul>
+                        <li>I am Rahul Jadav, an Undergraduate Student at NIT Surat.</li>
+                        <li>Passionate Web Developer and
+                            Technology Geek.</li>
+                        <li>Able to Build a Full-Stack Web Application with
+                            all functionality using MERN Stack and Deploy.</li>
+                        <li>Eager to Work on projects and Collaborate.</li>
+                    </ul>
+                </div>
+                <div class="abt-pic">
+                    <img class="propic" src="/resources/rahuljadavpropic.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="skill" class="Skills" style="display: flex;
+    flex-direction: column;
+    align-items: center;">
+            <div class="title">
+                My Skill Set
+            </div>
+
+            <img class="Skill-pic" src="/resources/Group 4skill.svg" alt="">
+
+        </div>
+        <div id="projects" class="prj">
+            <div class="title">
+                Projects
+            </div>
+
+            <div class="projects">
+                <div class="project">
+                    <div class="project-name">
+                        <p>Study-Resources</p>
+                    </div>
+                    <a href="https://study-recourses-2021.herokuapp.com/">
+                        <img class="project-img" src="/resources/project/Scs.PNG" alt="">
+                    </a>
+                    <div class="project-desc">
+                        This is Study-Resources Sharing platform.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        <p>Badge-Generator</p>
+                    </div>
+                    <a href="https://badge99.herokuapp.com/">
+                        <img class="project-img" src="/resources/project/badge99.PNG" alt="">
+                    </a>
+                    <div class="project-desc">
+                        We can generate and store badges for university.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        <p>Poll-Room</p>
+                    </div>
+                    <a href="https://pollroom.herokuapp.com/">
+                        <img class="project-img" src="/resources/project/pollroom.PNG" alt="">
+                    </a>
+                    <div class="project-desc">
+                        We can generate polls in different rooms .
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        <p>Being-Social</p>
+                    </div>
+                    <a href="https://being-social.netlify.app/">
+                        <img class="project-img" src="/resources/project/being-social.PNG" alt="">
+                    </a>
+                    <div class="project-desc">
+                        We can generate and store badges for university.
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <div class="title">
+                Connect Me
+            </div>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <p>
+                        I'm seeking out opportunities to collaborate with companies / agencies / individuals, not just
+                        work for them.
+                    </p>
+                    <p>
+                        I want to bring my collective design experience to the table where we can work together to solve
+                        real business-problems in a way that optimizes all of our respective experience and knowledge.
+                    </p>
+
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <h3 class="message-me">Messege Me</h3>
+                    <input placeholder="your email address" class="msg" type="email">
+                    <textarea class="msg-txt" name="message" id="message" placeholder=" Write your message ..."
+                        cols="30" rows="10"></textarea>
+                    <button class="btn" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+            <div class="handler">
+                <h3>Let's Connect On</h3>
+                <div class="handle">
+                    <div class="handles">
+                        <a href="https://www.linkedin.com/in/rahul-jadav-4261321b2/"><img class="icon"
+                                src="/resources/linkedin-app-icon.svg" alt=""></a>
+                    </div>
+                    <div class="handles">
+                        <a href="https://github.com/rahuljadav21"><img class="icon" src="/resources/github_17.svg"
+                                alt=""></a>
+                    </div>
+                    <div class="handles">
+                        <a href="mailto:rahuljadav2121@gmail.com"><img class="icon" src="/resources/gmail-icon.svg"
+                                alt=""></a>
+                    </div>
+                    <div class="handles">
+                        <a href="https://twitter.com/jadavrahul21"><img class="icon"
+                                src="/resources/twitter-app-icon.svg" alt=""></a>
+                    </div>
+                    <div class="handles">
+                        <a href="https://www.instagram.com/rahuljadav.21/"><img class="icon"
+                                src="/resources/ig-instagram-icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="v1">
+            <svg style="width: 100%;" width="1437" height="354" viewBox="0 0 1437 354" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1436.5 354.001V128.001C1194 69.5001 1323.5 196.367 1002.19 264C930.706 279.046 845.684 291.208 742.5 297.5L642 270.239L619 264C557.579 234.539 504.46 206.017 458 179.405C289 -16 142.961 -65.2141 0.5 99.0001V354.001H1436.5Z"
+                    fill="#6C63FF" />
+            </svg>
+        </div> -->
+
+
+
+
+    </main>
+<script>
+    var form = document.querySelector('#contact-form');
+    console.log(form)
+    function handleForm(event) { event.preventDefault(); } 
+    form.addEventListener('submit', handleForm);
+</script>
+
+</body>
+
+</html>
